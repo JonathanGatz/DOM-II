@@ -87,3 +87,18 @@ test10.addEventListener(`scroll`, () => {
 // ****************************************************************************************************************************
 
 
+function logo1 (logo) {
+    logo1.log('event')
+    logo1.src = "/Users/jonathangatz/DOM-II/img/adventure.jpg" 
+}
+function img1 (img) {
+    logo1.log('event')
+    img1.style.opacity = "0.1" 
+}
+
+
+const stop = document.querySelector('a').addEventListener("click", function(event) {
+    document.getElementById("a").innerHTML += "Opps! you have been preventDefaulted";
+    event.preventDefault();
+})
+
